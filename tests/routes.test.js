@@ -21,3 +21,9 @@ describe('Invoice Routes', () => {
     });
   });
 });
+
+
+afterAll(async () => {
+  // Close the PostgreSQL connection
+  await db.end();
+});
